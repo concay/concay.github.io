@@ -1,12 +1,12 @@
 <?xml version="1.0" encoding="utf-8" standalone="yes"?>
 <rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
   <channel>
-    <title>Concay blog</title>
-    <link>https://concay.github.io/</link>
-    <description>Recent content on Concay blog</description>
+    <title>emoji on Concay blog</title>
+    <link>https://concay.github.io/tags/emoji/</link>
+    <description>Recent content in emoji on Concay blog</description>
     <generator>Hugo -- gohugo.io</generator>
     <language>en-us</language>
-    <lastBuildDate>Sat, 11 Mar 2023 00:00:00 +0000</lastBuildDate><atom:link href="https://concay.github.io/index.xml" rel="self" type="application/rss+xml" />
+    <lastBuildDate>Sat, 11 Mar 2023 00:00:00 +0000</lastBuildDate><atom:link href="https://concay.github.io/tags/emoji/index.xml" rel="self" type="application/rss+xml" />
     <item>
       <title>Create your first blog</title>
       <link>https://concay.github.io/blog/createyourownblog/</link>
@@ -14,15 +14,6 @@
       
       <guid>https://concay.github.io/blog/createyourownblog/</guid>
       <description>&lt;p&gt;This will help you to create your first blog without to much understaning about web coding.&lt;/p&gt;</description>
-    </item>
-    
-    <item>
-      <title>About</title>
-      <link>https://concay.github.io/page/about/</link>
-      <pubDate>Wed, 08 Mar 2023 15:25:33 +0700</pubDate>
-      
-      <guid>https://concay.github.io/page/about/</guid>
-      <description>I am currently a student of HCMUT and love to learn new things.</description>
     </item>
     
   </channel>
