@@ -188,7 +188,7 @@
         </li></ul>
   </details>
 
-    <p>This will help you to create your first blog without to much understaning about web coding.</p>
+    <p>This will help you to create your first blog without to much understanding about web coding.</p>
 <h3 id="preparing">Preparing</h3>
 <p>First you have to install:</p>
 <ol>
@@ -198,23 +198,23 @@
 
 I recommend to install hugo using choco library by running:</li>
 </ol>
-<div class="highlight"><pre tabindex="0" style="color:#f8f8f2;background-color:#282a36;-moz-tab-size:4;-o-tab-size:4;tab-size:4;"><code class="language-p" data-lang="p"><span style="display:flex;"><span>  <span style="color:#8be9fd;font-style:italic">choco</span> <span style="color:#8be9fd;font-style:italic">install</span> <span style="color:#8be9fd;font-style:italic">hugo</span><span style="color:#ff79c6">-</span><span style="color:#8be9fd;font-style:italic">extended</span>
+<div class="highlight"><pre tabindex="0" style="color:#f8f8f2;background-color:#282a36;-moz-tab-size:4;-o-tab-size:4;tab-size:4;"><code class="language-powershell" data-lang="powershell"><span style="display:flex;"><span>  choco install <span style="color:#8be9fd;font-style:italic">hugo-extended</span>
 </span></span></code></pre></div><p>Incase you don&rsquo;t have choco then go to PowerShell in administrative shell and run:</p>
-<div class="highlight"><pre tabindex="0" style="color:#f8f8f2;background-color:#282a36;-moz-tab-size:4;-o-tab-size:4;tab-size:4;"><code class="language-p" data-lang="p"><span style="display:flex;"><span><span style="color:#8be9fd;font-style:italic">Set</span><span style="color:#ff79c6">-</span><span style="color:#8be9fd;font-style:italic">ExecutionPolicy</span> <span style="color:#8be9fd;font-style:italic">Bypass</span> <span style="color:#ff79c6">-</span><span style="color:#8be9fd;font-style:italic">Scope</span> <span style="color:#ff79c6">Process</span> <span style="color:#ff79c6">-</span><span style="color:#8be9fd;font-style:italic">Force;</span> <span style="color:#8be9fd;font-style:italic">[System</span>.<span style="color:#8be9fd;font-style:italic">Net</span>.<span style="color:#8be9fd;font-style:italic">ServicePointManager]</span>::<span style="color:#8be9fd;font-style:italic">SecurityProtocol</span> <span style="color:#ff79c6">=</span> <span style="color:#8be9fd;font-style:italic">[System</span>.<span style="color:#8be9fd;font-style:italic">Net</span>.<span style="color:#8be9fd;font-style:italic">ServicePointManager]</span>::<span style="color:#8be9fd;font-style:italic">SecurityProtocol</span> <span style="color:#ff79c6">-</span><span style="color:#8be9fd;font-style:italic">bor</span> <span style="color:#bd93f9">3072</span><span style="color:#8be9fd;font-style:italic">;</span> <span style="color:#8be9fd;font-style:italic">iex</span> ((<span style="color:#8be9fd;font-style:italic">New</span><span style="color:#ff79c6">-</span><span style="color:#8be9fd;font-style:italic">Object</span> <span style="color:#8be9fd;font-style:italic">System</span>.<span style="color:#8be9fd;font-style:italic">Net</span>.<span style="color:#8be9fd;font-style:italic">WebClient</span>).<span style="color:#8be9fd;font-style:italic">DownloadString</span>(<span style="color:#f1fa8c">&#39;https://community.chocolatey.org/install.ps1&#39;</span>))
+<div class="highlight"><pre tabindex="0" style="color:#f8f8f2;background-color:#282a36;-moz-tab-size:4;-o-tab-size:4;tab-size:4;"><code class="language-powershell" data-lang="powershell"><span style="display:flex;"><span><span style="color:#8be9fd;font-style:italic">Set-ExecutionPolicy</span> Bypass -Scope <span style="color:#ff79c6">Process</span> -Force; [System.Net.ServicePointManager]::SecurityProtocol = [System.Net.ServicePointManager]::SecurityProtocol <span style="color:#ff79c6">-bor</span> <span style="color:#bd93f9">3072</span>; <span style="color:#8be9fd;font-style:italic">iex </span>((<span style="color:#8be9fd;font-style:italic">New-Object</span> System.Net.WebClient).DownloadString(<span style="color:#f1fa8c">&#39;https://community.chocolatey.org/install.ps1&#39;</span>))
 </span></span></code></pre></div><h3 id="create-a-site">Create a site</h3>
 <p>Go to your project directory and enter these, line by line:</p>
-<div class="highlight"><pre tabindex="0" style="color:#f8f8f2;background-color:#282a36;-moz-tab-size:4;-o-tab-size:4;tab-size:4;"><code class="language-p" data-lang="p"><span style="display:flex;"><span>  <span style="color:#8be9fd;font-style:italic">hugo</span> <span style="color:#ff79c6">new</span> <span style="color:#8be9fd;font-style:italic">site</span> <span style="color:#8be9fd;font-style:italic">blog</span>
-</span></span><span style="display:flex;"><span>  <span style="color:#8be9fd;font-style:italic">cd</span> <span style="color:#8be9fd;font-style:italic">blog</span>
+<div class="highlight"><pre tabindex="0" style="color:#f8f8f2;background-color:#282a36;-moz-tab-size:4;-o-tab-size:4;tab-size:4;"><code class="language-powershell" data-lang="powershell"><span style="display:flex;"><span>  hugo new site blog
+</span></span><span style="display:flex;"><span>  <span style="color:#8be9fd;font-style:italic">cd </span>blog
 </span></span></code></pre></div><p>This will have to to create a site in your directory.</p>
 <h3 id="adding-theme">Adding theme</h3>
 <p>Now, we will have to work with git.</p>
-<div class="highlight"><pre tabindex="0" style="color:#f8f8f2;background-color:#282a36;-moz-tab-size:4;-o-tab-size:4;tab-size:4;"><code class="language-p" data-lang="p"><span style="display:flex;"><span><span style="color:#8be9fd;font-style:italic">git</span> <span style="color:#ff79c6">init</span>
-</span></span><span style="display:flex;"><span><span style="color:#8be9fd;font-style:italic">git</span> <span style="color:#8be9fd;font-style:italic">submodule</span> <span style="color:#ff79c6">add</span> <span style="color:#8be9fd;font-style:italic">https</span>:<span style="color:#6272a4">//github.com/apvarun/blist-hugo-theme.git themes/blist</span>
+<div class="highlight"><pre tabindex="0" style="color:#f8f8f2;background-color:#282a36;-moz-tab-size:4;-o-tab-size:4;tab-size:4;"><code class="language-powershell" data-lang="powershell"><span style="display:flex;"><span>git init
+</span></span><span style="display:flex;"><span>git submodule add https://github.com/apvarun/<span style="color:#8be9fd;font-style:italic">blist-hugo</span>-theme.git themes/blist
 </span></span></code></pre></div><p>This will add a theme to your blog, there several things to do with each theme to make their really work, you can see blist theme i have add in <a href="https://themes.gohugo.io/themes/blist-hugo-theme/#preview-the-theme-with-example-content" target="_blank" rel="noopener">here</a>
 .
 Remember to go to your config.toml file in the blog directory and change theme to &lsquo;blist&rsquo;.
 When you done all that let take a look by running in your local host by enter in PowerShell (make sure you are in blog directory):</p>
-<div class="highlight"><pre tabindex="0" style="color:#f8f8f2;background-color:#282a36;-moz-tab-size:4;-o-tab-size:4;tab-size:4;"><code class="language-p" data-lang="p"><span style="display:flex;"><span><span style="color:#8be9fd;font-style:italic">hugo</span> <span style="color:#8be9fd;font-style:italic">serve</span>
+<div class="highlight"><pre tabindex="0" style="color:#f8f8f2;background-color:#282a36;-moz-tab-size:4;-o-tab-size:4;tab-size:4;"><code class="language-powershell" data-lang="powershell"><span style="display:flex;"><span>hugo serve
 </span></span></code></pre></div><p>And here you go.</p>
   </article>
 <div class="px-2 mb-2">
